@@ -8,14 +8,6 @@ Introduction
 
 This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
-R preparation
-
-Set up R to load knitr and also to make sure that the default for echo is TRUE for the whole document
-```{r}
-library(knitr)
-opts_chunk$set(echo = TRUE)
-```
-
 Loading and preprocessing the data
 
 1. Load the data
@@ -46,7 +38,6 @@ NB. As per instructions on the assignment page, I ignored the missing values in 
 1. Calculate the total number of steps taken per day
 ```{r}
 stepsbyday <- aggregate(steps ~ date, data = activity, sum)
-print(stepsbyday)
 ```
 
 2. Make a histogram of the total number of steps taken each day
