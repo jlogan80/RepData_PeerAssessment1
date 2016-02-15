@@ -3,8 +3,7 @@ title: "PA1.Rmd"
 author: "Jane Logan"
 date: "February 14, 2016"
 output: 
-  html_document:
-    keep_md: true
+  html_document
 ---
 Introduction
 
